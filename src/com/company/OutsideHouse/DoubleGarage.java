@@ -3,10 +3,7 @@ package com.company.OutsideHouse;
 import com.company.Home;
 import com.company.Interfaces.FireSensor;
 
-import java.util.Random;
-import java.util.Scanner;
-
-//it's not type of rooms, but it's still connected with Home security
+//it's not type of rooms inside the home, but it's still connected with Home security
 public class DoubleGarage extends Home implements FireSensor {
         private int gates;
         private String door;
@@ -50,6 +47,6 @@ public class DoubleGarage extends Home implements FireSensor {
         return "DoubleGarage{" +
                 "gates=" + gates +
                 ", door='" + door + '\'' +
-                "} " + super.toString();
+                "} " ;
     }
 }

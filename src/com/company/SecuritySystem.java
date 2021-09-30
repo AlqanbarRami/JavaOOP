@@ -8,6 +8,7 @@ public abstract class SecuritySystem {
     // audio signals
     private boolean runSecurityAlarm;
     private boolean runFireAlarm;
+    //:
     private boolean windowOpenClose;
     private boolean callPolice;
     private boolean mainFrontDoor;

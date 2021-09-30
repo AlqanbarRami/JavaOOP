@@ -1,5 +1,6 @@
 package com.company.SecondFloor;
 
+
 import com.company.Interfaces.QuickButton;
 import com.company.Rooms;
 
@@ -28,13 +29,9 @@ public class MasterRoom extends Rooms implements QuickButton {
     public void quickButton(boolean activeOrDeactivate) {
         setQuickButton(true);
         if(activeOrDeactivate) {
-            if (getTypeOfRoom().toLowerCase().contains("master")) {
                 closeAllMainDoorsAndWindows();
                 runSecurity();
-            } else {
-                System.out.println("This feature is only available inside The master room");
             }
-        }
         else{
             setQuickButton(false);
             securityAlarm(false);

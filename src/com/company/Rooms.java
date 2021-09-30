@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class Rooms extends Home implements FireSensor, QuickButton {
     private String typeOfRoom;
     private int totalWindows;
+    //There are many rooms that have regular windows. Therefore, there is no need to write the window type if it is not special
     private String typeOfWindow = "Normal One";
     private String placeOfRoom;
 

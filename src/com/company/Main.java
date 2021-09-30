@@ -1,24 +1,26 @@
 package com.company;
 
-import com.company.FirstFloor.DiningRoom;
-import com.company.OutsideHouse.Ground;
-import com.company.SecondFloor.BathRoom;
-import com.company.SecondFloor.MasterRoom;
-import com.company.SecondFloor.NormalRoom;
+import com.company.FirstFloor.*;
+import com.company.SecondFloor.*;
+import com.company.UnderHouse.*;
+import com.company.OutsideHouse.*;
 
 
-import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
+
 
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-
-
-
-         MasterRoom masterRoom = new MasterRoom();
+        MasterRoom masterRoom = new MasterRoom();
         masterRoom.StartMenu(masterRoom);
+
+
+        /* testing normal room
+        NormalRoom normalRoom = new NormalRoom();
+        normalRoom.StartMenu(normalRoom);
+
+        */
 
         /* Test sensors in The ground
         Ground ground = new Ground();

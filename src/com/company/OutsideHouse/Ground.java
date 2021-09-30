@@ -7,7 +7,7 @@ import com.company.Interfaces.FireSensor;
 import java.util.Random;
 import java.util.Scanner;
 
-//it's not type of rooms, but it's still connected with Home security
+//it's not type of rooms, but  still connected with Home security
 public class Ground extends Home implements AnimalSensor, FireSensor {
 
 

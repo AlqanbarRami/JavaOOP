@@ -2,12 +2,13 @@ package com.company;
 
 
 
+import com.company.Interfaces.AnimalSensor;
 
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 
-public class Home extends SecuritySystem {
+public class Home extends SecuritySystem implements AnimalSensor {
     private boolean telephoneWithAlarm;
     private boolean sprinkler;
 
@@ -58,6 +59,8 @@ public class Home extends SecuritySystem {
 
     public void callPoliceNow() {
         setCallPolice(true);
+        securityAlarm(true);
+        closeAllMainDoorsAndWindows();
         System.out.println("The police on the way");
     }
 
@@ -246,4 +249,8 @@ public class Home extends SecuritySystem {
     }
 
 
+    @Override
+    public void animalSensor() {
+        System.out.println("We found animal");
+    }
 }
